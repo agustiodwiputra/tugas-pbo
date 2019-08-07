@@ -1,10 +1,10 @@
 <?php 
-class kendaraan{
-	var $jenis;
+class motor{
+	var $merk;
 	var $transportasi;
 	var $bahan_bakar;
 
-	public function setjenis($jenis=''){
+	public function setmerk($merk=''){
 		$this->jenis=$jenis;
 	}
 	public function settransportasi($transportasi=''){
@@ -14,15 +14,43 @@ class kendaraan{
 		$this->bahan_bakar=$bahan_bakar;
 	}
 	public function cetak(){
-		echo'jenis :'.$this->jenis.",";
+		echo'merk :'.$this->merk.",";
 		echo'transportasi :'.$this->transportasi.",";
-		echo'bahan_bakar :'.$this->bahan_bakar.",";
-		echo' :'.$this->;
+		echo'bahan_bakar :'.$this->bahan_bakar.",";;
 	}
 }
 $motor = new kendaraan();
-$motor->setjenis('motor');
+$motor->setmerk('mio j');
 $motor->settransportasi('darat');
 $motor->setbahan_bakar('bensin');
 $motor->cetak();
 echo "<br>";
+
+$motor = new kendaraan();
+$motor->setmerk('kawasaki');
+$motor->settransportasi('darat');
+$motor->setbahan_bakar('pertamax');
+$motor->cetak();
+echo "<br>";
+
+$motor = new kendaraan();
+$motor->setmerk('supra');
+$motor->settransportasi('darat');
+$motor->setbahan_bakar('bensin');
+$motor->cetak();
+echo "<br>";
+
+$motor = new kendaraan();
+$motor->setmerk('vario 150');
+$motor->settransportasi('darat');
+$motor->setbahan_bakar('bensin');
+$motor->cetak();
+echo "<br>";
+
+$motor = new kendaraan();
+$motor->setmerk('satria fu');
+$motor->settransportasi('darat');
+$motor->setbahan_bakar('pertamax');
+$motor->cetak();
+echo "<br>";
+
