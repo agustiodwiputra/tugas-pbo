@@ -5,7 +5,7 @@ class motor{
 	var $bahan_bakar;
 
 	public function setmerk($merk=''){
-		$this->jenis=$jenis;
+		$this->merk=$merk;
 	}
 	public function settransportasi($transportasi=''){
 		$this->transportasi=$transportasi;
